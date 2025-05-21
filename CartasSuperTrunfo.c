@@ -12,6 +12,8 @@ int main()
     float pibpercapita1, pibpercapita2; // PIB PER CAPITA - DESAFIO AVENTUREIRO
     
     //INICIALIZANDO VARIAVEIS DA PRIMEIRA CARTA
+    printf("CADASTRO DE CARTAS SUPER TRUNFO\n");
+    printf("CADASTRO DA PRIMEIRA CARTA\n");
     printf("Digite o nome do estado da primeira carta: ");
     scanf("%s", estado1);
     printf("Digite o nome da cidade da primeira carta: ");
@@ -30,6 +32,7 @@ int main()
     pibpercapita1 = pib1 / populacao1; //CÁLCULO DO PIB PER CAPITA - DESAFIO AVENTUREIRO
 
     //INICIALIZANDO VARIAVEIS DA SEGUNDA CARTA
+    printf("CADASTRO DA SEGUNDA CARTA\n");
     printf("Digite o nome do estado da segunda carta: ");
     scanf("%s", estado2);
     printf("Digite o nome da cidade da segunda carta: ");
