@@ -10,7 +10,7 @@ int main()
     float area1, area2, pib1,pib2;
     float denspop1, denspop2; //DENSIDADE POPULACIONAL - DESAFIO AVENTUREIRO
     float pibpercapita1, pibpercapita2; // PIB PER CAPITA - DESAFIO AVENTUREIRO
-    //teste
+    
     //INICIALIZANDO VARIAVEIS DA PRIMEIRA CARTA
     printf("Digite o nome do estado da primeira carta: ");
     scanf("%s", estado1);
