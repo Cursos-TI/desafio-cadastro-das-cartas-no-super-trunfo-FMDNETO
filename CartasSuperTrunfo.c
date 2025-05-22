@@ -6,10 +6,12 @@ int main()
     {
     //DECLARANDO VARIAVEIS
     char estado1[20], estado2[20], codigocarta1[20], codigocarta2[20], nomecidade1[20], nomecidade2[20];
-    int populacao1, populacao2, pturismo1, pturismo2;
+    unsigned long int populacao1, populacao2; //POPULAÇÃO COMO UNSIGNED LONG INT - DESAFIO MESTRE
+    int pturismo1, pturismo2; //MODIFICAÇÃO FEITA NO DESAFIO MESTRE
     float area1, area2, pib1,pib2;
     float denspop1, denspop2; //DENSIDADE POPULACIONAL - DESAFIO AVENTUREIRO
     float pibpercapita1, pibpercapita2; // PIB PER CAPITA - DESAFIO AVENTUREIRO
+    float superpoder1, superpoder2; //SUPER PODER - DESAFIO MESTRE
     
     //INICIALIZANDO VARIAVEIS DA PRIMEIRA CARTA
     printf("Digite o nome do estado da primeira carta: ");
@@ -46,6 +48,10 @@ int main()
     scanf("%d", &pturismo2);
     denspop2 = populacao2 / area2; //CÁLCULO DA DENSIDADE POPULACIONAL - DESAFIO AVENTUREIRO
     pibpercapita2 = pib2 / populacao2; //CÁLCULO DO PIB PER CAPITA - DESAFIO AVENTUREIRO
+
+    //DESAFIO MESTRE - CALCULO DO SUPER PODER
+    superpoder1 = (populacao1+area1+pturismo1+pibpercapita1+(1/denspop1));
+    superpoder2 = (populacao2+area2+pturismo2+pibpercapita2+(1/denspop2));
     
     //EXIBINDO O RESULTADO DA PRIMEIRA CARTA
     printf("-------------------------\n");
@@ -76,6 +82,20 @@ int main()
     printf("Pontos Turisticos: %d\n", pturismo2);
     printf("Densidade Populacional: %.2f\n", denspop2); //EXIBINDO A DENSIDADE POPULACIONAL - DESAFIO AVENTUREIRO
     printf("Pib per capita: R$ %.2f\n", pibpercapita2); //EXIBINDO O PIB PER CAPITA - DESAFIO AVENTUREIRO
+
+    //DESAFIO MESTRE - VERIFICANDO A CARTA VENCEDORA
+    printf("------------------------------------\n");
+    printf("----VERIFICANDO A CARTA VENCEDORA----\n");
+    printf("------------------------------------\n");
+    printf("Populacao: %s\n", (populacao1 > populacao2) ? "CARTA 1" : "CARTA 2");
+    printf("Area: %s\n", (area1 > area2) ? "CARTA 1" : "CARTA 2");
+    printf("Pib: %s\n", (pib1 > pib2) ? "CARTA 1" : "CARTA 2");
+    printf("Pontos Turisticos: %s\n", (pturismo1 > pturismo2) ? "CARTA 1" : "CARTA 2");
+    printf("Densidade Populacional: %s\n", (denspop1 > denspop2) ? "CARTA 1" : "CARTA 2");
+    printf("Pib per capita: %s\n", (pibpercapita1 > pibpercapita2) ? "CARTA 1" : "CARTA 2");
+    printf("Super Poder: %s\n", (superpoder1 > superpoder2) ? "CARTA 1" : "CARTA 2");
+    printf("FIM DO PROGRAMA\n");
+
 
     return 0;
     //FIM DO PROGRAMA
