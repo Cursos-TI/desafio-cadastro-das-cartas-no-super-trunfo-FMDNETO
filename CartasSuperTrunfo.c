@@ -87,16 +87,15 @@ int main()
     printf("------------------------------------\n");
     printf("----VERIFICANDO A CARTA VENCEDORA----\n");
     printf("------------------------------------\n");
-    printf("Populacao: %s\n", (populacao1 > populacao2) ? "CARTA 1" : "CARTA 2");
-    printf("Area: %s\n", (area1 > area2) ? "CARTA 1" : "CARTA 2");
-    printf("Pib: %s\n", (pib1 > pib2) ? "CARTA 1" : "CARTA 2");
-    printf("Pontos Turisticos: %s\n", (pturismo1 > pturismo2) ? "CARTA 1" : "CARTA 2");
-    printf("Densidade Populacional: %s\n", (denspop1 > denspop2) ? "CARTA 1" : "CARTA 2");
-    printf("Pib per capita: %s\n", (pibpercapita1 > pibpercapita2) ? "CARTA 1" : "CARTA 2");
-    printf("Super Poder: %s\n", (superpoder1 > superpoder2) ? "CARTA 1" : "CARTA 2");
+    printf("Populacao:\n CARTA 1: %d CARTA 2: %d", (populacao1 > populacao2), (populacao2 > populacao1));
+    printf("\nArea:\n CARTA 1: %d CARTA 2: %d", (area1 > area2), (area2 > area1));
+    printf("\nPib:\n CARTA 1: %d CARTA 2: %d", (pib1 > pib2), (pib2 > pib1));
+    printf("\nPontos Turisticos:\n CARTA 1: %d CARTA 2: %d", (pturismo1 > pturismo2), (pturismo2 > pturismo1));
+    printf("\nDensidade Populacional:\n CARTA 1: %d CARTA 2: %d", (denspop1 > denspop2), (denspop2 > denspop1));
+    printf("\nPib per capita:\n CARTA 1: %d CARTA 2: %d", (pibpercapita1 > pibpercapita2), (pibpercapita2 > pibpercapita1));
+    printf("\nSuper Poder:\n CARTA 1: %d CARTA 2: %d", (superpoder1 > superpoder2), (superpoder2 > superpoder1));
+    printf("\n------------------------------------\n");
     printf("FIM DO PROGRAMA\n");
-
-
     return 0;
     //FIM DO PROGRAMA
     }
